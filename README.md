@@ -11,7 +11,7 @@ La aplicación está hecha completamente con typescript, usando el patrón de di
  * |                  sr |     ........     | ........ |
  *  ---------------------------------------------------
 ```
-
+Resultados: https://federicoromani.github.io/ts-developer-profile/ 
 ## Instalación de la app
 
 ```
