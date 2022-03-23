@@ -31,8 +31,10 @@
 	<pre><code id=sr></code></pre>
 </body>
 <script>
-		document.getElementById('jn').innerHTML = JSON.parse(localStorage.getItem('JN'))?.prettyPrint();
-		document.getElementById('ssr').innerHTML = JSON.parse(localStorage.getItem('SSR'))?.prettyPrint();
+	setTimeout(()=>{
+		// document.getElementById('jn').innerHTML = JSON.parse(localStorage.getItem('JN'))?.prettyPrint();
+		// document.getElementById('ssr').innerHTML = JSON.parse(localStorage.getItem('SSR'))?.prettyPrint();
 		document.getElementById('sr').innerHTML = JSON.parse(localStorage.getItem('SR'))?.prettyPrint();
+	}, 300)
 </script>
 </html>
