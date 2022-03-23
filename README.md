@@ -1,10 +1,10 @@
-# ts-developer-profile
+# Perfiles de desarrolladores web
 
 La aplicación está hecha completamente con typescript, usando el patrón de diseño Abtract Factory
 
 ```
  *  ---------------------------------------------------
- * | asbtractProducts  → | backend          | frontend |
+ * | asbtractProducts  → |     backend      | frontend |
  * | concreteFactories ↓ | -----------------|----------|
  * |                  jn |   juniorBackend  | ........ |
  * |                 ssr |     ........     | ........ |
@@ -12,7 +12,7 @@ La aplicación está hecha completamente con typescript, usando el patrón de di
  *  ---------------------------------------------------
 ```
 
-### Para ello necesitamos hacer las siguientes instalaciones:
+## Instalación de la app
 
 ```
 npm install -g typescript
@@ -38,3 +38,7 @@ tsc -w
 > "module": "amd",
 > "outFile": "./dist/main.js",                          
 > "outDir": "./dist/",  
+
+## Ver resultados
+
+Acceda a <[path]/index.html/>

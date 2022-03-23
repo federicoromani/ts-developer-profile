@@ -5,10 +5,34 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>TS Developer Salary</title>
-	<script data-main="app" src="scripts/require.js"></script>
+	<script data-main="./app" src="scripts/require.js"></script>
 	<script src="dist/main.js"></script>
+	<script src="./scripts/prettyPrintJSON.js"></script>
+	<style>
+		body{
+			background: #efefef;
+		}
+		pre {
+			background-color: ghostwhite;
+			border: 1px solid silver;
+			padding: 10px 20px;
+			margin: 20px;
+			border-radius: 4px;
+			width: 25%;
+			margin-left: auto;
+			margin-right: auto;
+			}
+	</style>
 </head>
 <body>
-	
+	<h3>Perfiles de Desarrollador Web</h3>
+	<pre><code id=jn></code></pre>
+	<pre><code id=ssr></code></pre>
+	<pre><code id=sr></code></pre>
 </body>
+<script>
+		document.getElementById('jn').innerHTML = JSON.parse(localStorage.getItem('JN'))?.prettyPrint();
+		document.getElementById('ssr').innerHTML = JSON.parse(localStorage.getItem('SSR'))?.prettyPrint();
+		document.getElementById('sr').innerHTML = JSON.parse(localStorage.getItem('SR'))?.prettyPrint();
+</script>
 </html>
