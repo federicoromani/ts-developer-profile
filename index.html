@@ -11,6 +11,11 @@
 	<style>
 		body{
 			background: #efefef;
+			box-sizing: border-box;
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			color: #333;
+			line-height: 1.4;
+			font-size: 14px;
 		}
 		pre {
 			background-color: ghostwhite;
@@ -22,18 +27,28 @@
 			margin-left: auto;
 			margin-right: auto;
 			}
+			.h-title{
+				margin: 0 auto;
+				width: fit-content;
+			}
 	</style>
 </head>
 <body>
-	<h3>Perfiles de Desarrollador Web</h3>
+	<div style="width: 100%;">
+		<h2 class="h-title">Pruebas de Abstract Factory</h2>
+		<h3 class="h-title">Perfiles de Desarrollador Web</h3>
+	</div>
+	<h5>PRUEBA 1</h5>
 	<pre><code id=jn></code></pre>
+	<h5>PRUEBA 2</h5>
 	<pre><code id=ssr></code></pre>
+	<h5>PRUEBA 3</h5>
 	<pre><code id=sr></code></pre>
 </body>
 <script>
 	setTimeout(()=>{
-		// document.getElementById('jn').innerHTML = JSON.parse(localStorage.getItem('JN'))?.prettyPrint();
-		// document.getElementById('ssr').innerHTML = JSON.parse(localStorage.getItem('SSR'))?.prettyPrint();
+		document.getElementById('jn').innerHTML = JSON.parse(localStorage.getItem('JN'))?.prettyPrint();
+		document.getElementById('ssr').innerHTML = JSON.parse(localStorage.getItem('SSR'))?.prettyPrint();
 		document.getElementById('sr').innerHTML = JSON.parse(localStorage.getItem('SR'))?.prettyPrint();
 	}, 300)
 </script>
