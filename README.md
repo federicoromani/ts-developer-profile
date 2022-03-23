@@ -1,4 +1,4 @@
-# ts-developer-salary
+# ts-developer-profile
 
 La aplicación está hecha completamente con typescript, usando el patrón de diseño Abtract Factory
 
