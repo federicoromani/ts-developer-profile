@@ -1,6 +1,16 @@
 # ts-developer-salary
 
-La aplicación está hecha completamente con typescript. 
+La aplicación está hecha completamente con typescript, usando el patrón de diseño Abtract Factory
+
+```
+ *  ---------------------------------------------------
+ * | asbtractProducts  → | backend          | frontend |
+ * | concreteFactories ↓ | -----------------|----------|
+ * |                  jn |   juniorBackend  | ........ |
+ * |                 ssr |     ........     | ........ |
+ * |                  sr |     ........     | ........ |
+ *  ---------------------------------------------------
+```
 
 ### Para ello necesitamos hacer las siguientes instalaciones:
 
@@ -26,5 +36,5 @@ tsc -w
 
 *Para que todo el js quede en un único archivo y en un directorio específico*
 > "module": "amd",
-> "outFile": "./dist/main.js",                                  
+> "outFile": "./dist/main.js",                          
 > "outDir": "./dist/",  

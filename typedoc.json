@@ -1,0 +1,4 @@
+{
+	"entryPoints": ["./app.ts", "./developer/*.ts"],
+	"out": "docs"
+}
