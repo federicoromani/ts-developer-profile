@@ -20,14 +20,10 @@ Una forma de plantear la solución, sería la siguiente:
  * --------------------------------------------------------
 ```
 ## Ver documentación
-Acceda a <[path]/docs/modules.html/>
+Acceda a https://federicoromani.github.io/ts-developer-profile/docs/modules
 
 ## Ver resultados
-Acceda a <[path]/index.html/>
+Acceda a https://federicoromani.github.io/ts-developer-profile/
 
-<<<<<<< HEAD
-Acceda a <[path]/index.html/>
-=======
 ## Configuración de la app
 Para la configuración los archivos importantes son el de webpack.config.js, tsconfig.json y package.json
->>>>>>> Mejoras para la docu
