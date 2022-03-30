@@ -66,8 +66,8 @@
 	<script src="./results.front.js"></script>
 	<script>
 		setTimeout(()=>{
-			document.getElementById('back').innerHTML = JSON.parse(localStorage.getItem('Backend'))?.prettyPrint() ?? BACK;
-			document.getElementById('front').innerHTML = JSON.parse(localStorage.getItem('Frontend'))?.prettyPrint() ?? FRONT;
+			document.getElementById('back').innerHTML = JSON.parse(localStorage.getItem('Backend'))?.prettyPrint() ?? BACK.prettyPrint();
+			document.getElementById('front').innerHTML = JSON.parse(localStorage.getItem('Frontend'))?.prettyPrint() ?? FRONT.prettyPrint();
 		}, 300)
 	</script>
 </body>
