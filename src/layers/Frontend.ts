@@ -8,6 +8,8 @@ import { Layer, LayerOptions } from "../types";
  * Crea perfiles FRONTEND con diferentes seniorities.
  */
 export class Frontend implements DevBySeniority {
+	readonly valuable: string = 'English';
+
 	public static layer: Layer = {
 		name: LayerOptions.frontend ,
 		techstack: ['ES6', 'Typescript', 'VueJS', 'Pinia', 'UnoCSS']

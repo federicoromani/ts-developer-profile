@@ -2,6 +2,7 @@ export interface Profile {
 	description: string;
 	techstack: string[];
 	seniority: Seniority;
+	desirable?: string;
 }
 
 export interface Seniority {

@@ -22,7 +22,7 @@ export namespace Profiles {
 	}
 
 	export class BackendSemisenior extends Semisenior {
-		constructor(public layer: Layer){	
+		constructor(public layer: Layer, public desirable?: string){	
 			super();
 		}
 		/**
@@ -32,13 +32,14 @@ export namespace Profiles {
 			return {
 				description: this.layer.name,
 				techstack: this.layer.techstack,
-				seniority: this.devSeniority
+				seniority: this.devSeniority,
+				desirable: this.desirable
 			};
 		}
 	}
 
 	export class BackendSenior extends Senior {
-		constructor(public layer: Layer){	
+		constructor(public layer: Layer, public desirable?: string){	
 			super();
 		}
 		/**
@@ -48,7 +49,8 @@ export namespace Profiles {
 			return {
 				description: this.layer.name,
 				techstack: this.layer.techstack,
-				seniority: this.devSeniority
+				seniority: this.devSeniority,
+				desirable: this.desirable
 			};
 		}
 	}

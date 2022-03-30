@@ -8,6 +8,7 @@ import { Layer, LayerOptions } from "../types";
  * Crea perfiles BACKEND con diferentes seniorities.
  */
 export class Backend implements DevBySeniority {
+	readonly desirable: string = 'Elastic Search';
 	public static layer: Layer = {
 		name: LayerOptions.backend ,
 		techstack: ['PHP Laravel', 'Node', 'MySQL']
