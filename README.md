@@ -26,4 +26,4 @@ Acceda a https://federicoromani.github.io/ts-developer-profile/docs/modules
 Acceda a https://federicoromani.github.io/ts-developer-profile/
 
 ## Configuración de la app
-Para la configuración los archivos importantes son el de webpack.config.js, tsconfig.json y package.json
+Para la configuración, los archivos importantes son el de webpack.config.js, tsconfig.json y package.json
