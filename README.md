@@ -1,44 +1,33 @@
 # Perfiles de desarrolladores web
 
-La aplicación está hecha completamente con typescript, usando el patrón de diseño Abtract Factory
+La aplicación está hecha completamente con typescript. Además hago uso de node y webpack para transpilar.
+La idea es mostrar la implementación del patrón *Abtract Factory*, los beneficios que tiene ts en el desarrollo.
+
+A continuación se plantea un problema simple, que sirve para mostrar este patrón.
+
+Imaginemos que somos especialistas en selección IT y una consultora nos pide 3 perfiles backend con diferente experiencia y determinados parametros, entre ellos, rango salarial y stack tecnológico. Se requiere un junior, un semisenior y un senior.
+
+Una forma de plantear la solución, sería la siguiente:
 
 ```
- *  ---------------------------------------------------
- * | asbtractProducts  → |     backend      | frontend |
- * | concreteFactories ↓ | -----------------|----------|
- * |                  jn |   juniorBackend  | ........ |
- * |                 ssr |     ........     | ........ |
- * |                  sr |     ........     | ........ |
- *  ---------------------------------------------------
+ * --------------------------------------------------------
+ * | ConcreteFactories → |      BACKEND      |  FRONTEND  |
+ * | AsbtractProducts  ↓ |                   |            |
+ * |---------------------|-------------------|------------|
+ * | • JUNIOR            | BackendJunior     | .......... |
+ * | • SEMISENIOR        | BackendSemisenior | .......... |
+ * | • SENIOR            | BackendSenior     | .......... |
+ * --------------------------------------------------------
 ```
-Resultados: https://federicoromani.github.io/ts-developer-profile/ 
-## Instalación de la app
-
-```
-npm install -g typescript
-
-tsc -v
-
-tsc --init
-
-tsc -w 
-```
-
-### Habilitar la siguiente linea de tsconfig.json: 
-
-*Esto hace que la depuración del código en el navegador, se ejecute sobre los archivos .ts*
-> "sourceMap": true,
-
-### Otras configuraciones útiles de tsconfig son: 
-
-*Esto evita que los comentarios pasen al .js final*
-> "removeComments": true, 
-
-*Para que todo el js quede en un único archivo y en un directorio específico*
-> "module": "amd",
-> "outFile": "./dist/main.js",                          
-> "outDir": "./dist/",  
+## Ver documentación
+Acceda a <[path]/docs/modules.html/>
 
 ## Ver resultados
-
 Acceda a <[path]/index.html/>
+
+<<<<<<< HEAD
+Acceda a <[path]/index.html/>
+=======
+## Configuración de la app
+Para la configuración los archivos importantes son el de webpack.config.js, tsconfig.json y package.json
+>>>>>>> Mejoras para la docu

@@ -1,0 +1,1 @@
+npx typedoc .\src\types.ts .\src\iDevBySeniority.ts .\src\Profiles.ts .\src\Creator.ts  .\src\decorators\constructorReadOnly.ts .\src\seniority .\src\layers
