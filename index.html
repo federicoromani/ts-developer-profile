@@ -41,9 +41,23 @@
 			margin: 0 auto;
 			width: fit-content;
 		}
+		a {
+			text-decoration: none;
+			display: inline-block;
+			padding: 8px 16px;
+		}
+		a:hover {
+			background-color: rgb(184, 241, 206);
+			color: black;
+		}
+		.previous {
+			background-color: #04AA6D;
+  		color: white;
+		}
 	</style>
 </head>
 <body>
+	<a href="javascript:void(0)" onclick="window.history.back();" class="previous">&laquo; Volver</a>
 	<div style="width: 100%;">
 		<h2 class="h-title">Perfiles de Desarrollador Web</h2>
 		<h4 class="h-title">Usando TS</h4>
@@ -53,14 +67,7 @@
 		
 		<pre class="item"><h5>EJEMPLO: solicitud de perfiles frontend</h5><code id=front></code></pre>
 	</div>
-	<div m2 flex justify-center text-2xl op30 hover="op80">
-		<a
-			i-carbon-logo-github
-			text-inherit
-			href="https://github.com/federicoromani/ts-developer-profile"
-			target="_blank"
-		></a>
-	</div>
+	<a href="javascript:void(0)" onclick="window.history.back();" class="previous">&laquo; Volver</a>
 	<script src="bundle.js"></script>
 	<script src="./results.back.js"></script>
 	<script src="./results.front.js"></script>
