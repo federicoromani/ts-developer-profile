@@ -1,2 +1,1 @@
- npx typedoc typedoc --darkHighlightTheme dark-plus .\src\types.ts .\src\iDevBySeniority.ts .\src\Profiles.ts .\src\Creator.ts  
-.\src\decorators\constructorReadOnly.ts .\src\seniority .\src\layers
+npx typedoc typedoc --darkHighlightTheme dark-plus .\src\types.ts .\src\IDevByLayer.ts .\src\Profiles.ts .\src\Creator.ts  .\src\decorators\constructorReadOnly.ts .\src\seniorities .\src\layers

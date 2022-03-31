@@ -1,5 +1,5 @@
-import { DevBySeniority } from "../iDevBySeniority";
-import { Junior, Semisenior, Senior } from "../seniority";
+import { DevByLayer } from "../IDevByLayer";
+import { Junior, Semisenior, Senior } from "../seniorities";
 import { Profiles as Dev } from "../Profiles";
 import { Layer, LayerOptions } from "../types";
 
@@ -7,7 +7,7 @@ import { Layer, LayerOptions } from "../types";
  * ### CONCRETE FACTORY
  * Crea perfiles FRONTEND con diferentes seniorities.
  */
-export class Frontend implements DevBySeniority {
+export class Frontend implements DevByLayer {
 	readonly valuable: string = 'English';
 
 	public static layer: Layer = {

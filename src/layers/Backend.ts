@@ -1,5 +1,5 @@
-import { DevBySeniority } from "../iDevBySeniority";
-import { Junior, Semisenior, Senior } from "../seniority";
+import { DevByLayer } from "../IDevByLayer";
+import { Junior, Semisenior, Senior } from "../seniorities";
 import { Profiles as Dev } from "../Profiles";
 import { Layer, LayerOptions } from "../types";
 
@@ -7,7 +7,7 @@ import { Layer, LayerOptions } from "../types";
  * ### CONCRETE FACTORY
  * Crea perfiles BACKEND con diferentes seniorities.
  */
-export class Backend implements DevBySeniority {
+export class Backend implements DevByLayer {
 	readonly desirable: string = 'Elastic Search';
 	public static layer: Layer = {
 		name: LayerOptions.backend ,
@@ -19,11 +19,11 @@ export class Backend implements DevBySeniority {
 	}
 
 	public createSemisenior(): Semisenior {
-		return new Dev.BackendSemisenior(Backend.layer);
+		return new Dev.BackendSemisenior(Backend.layer, this.desirable);
 	}
 
 	public createSenior(): Senior {
-		return new Dev.BackendSenior(Backend.layer);
+		return new Dev.BackendSenior(Backend.layer, this.desirable);
 	}
 
 }

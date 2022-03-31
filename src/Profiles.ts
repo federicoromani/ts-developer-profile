@@ -1,4 +1,4 @@
-import { Junior, Semisenior, Senior } from "./seniority";
+import { Junior, Semisenior, Senior } from "./seniorities";
 import { Layer, Profile } from "./types";
 /**
  * Contiene las clases de todos los perfiles posibles

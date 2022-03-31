@@ -19,10 +19,14 @@ Una forma de plantear la solución, sería la siguiente:
  * | • SENIOR            | BackendSenior     | .......... |
  * --------------------------------------------------------
 ```
+### ¿Por qué typescript?
+La definición de tipos en TS, nos ayuda a detectar errores fácilmente. Incluso, con algunos editores, los errores son indicados mientras escribimos el código.
+De otra manera deberíamos escribir varios test unitarios para detectar este tipo de errores y quizás no lleguemos a cubrir lo mismo que TS.
+
 ## Ver documentación
 Acceda a https://federicoromani.github.io/ts-developer-profile/docs/modules
 
-## Ver resultados
+## Resultados de ejemplo
 Acceda a https://federicoromani.github.io/ts-developer-profile/
 
 ## Configuración de la app
